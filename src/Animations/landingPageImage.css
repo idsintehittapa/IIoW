@@ -15,7 +15,7 @@
 }
 
 .landing__img-animation {
-  height: 100vh;
+  height: 50vh;
   background-image: linear-gradient(
       rgba(255, 69, 69, 0.3),
       rgba(232, 1, 1, 0.3)
@@ -24,4 +24,17 @@
   background-position: center;
   background-size: cover;
   animation: move 1.5s;
+  background-attachment: fixed;
+}
+
+@media (min-width: 40rem) {
+  .landing__img-animation {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 64rem) {
+  .landing__img-animation {
+    height: 100vh;
+  }
 }

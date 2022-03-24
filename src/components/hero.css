@@ -2,12 +2,14 @@
   background-image: linear-gradient(rgba(75, 75, 75, 0.3), rgba(0, 0, 0, 0.3)),
     url('../assets/sontage.jpg');
   height: 100vh;
+  display: block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(0.5px);
-  -webkit-filter: blur(0.5px);
+  /* filter: blur(0.5px); */
+  /* -webkit-filter: blur(0.5px); */
   position: relative;
+  background-attachment: fixed;
 }
 
 .hero__title {
