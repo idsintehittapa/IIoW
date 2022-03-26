@@ -1,0 +1,219 @@
+.landing_encyclopedia {
+  height: 100vh;
+  color: #f2f2f2;
+  padding: 0 2vh;
+}
+
+.encyclopedia {
+  margin: 5vh 0 5vh 0vh;
+  font-size: 4.5vmax;
+  text-transform: uppercase;
+}
+
+.horizontal__scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal__scroll_text_and_arrow {
+  display: flex;
+}
+
+.horizontal__scroll-p {
+  font-size: 4.5vw;
+}
+
+.arrow__container {
+  padding: 2rem;
+}
+
+.opty__arrow {
+  position: relative;
+  height: 5vw;
+  width: 25vw;
+}
+
+.opty__arrow .arrow__line {
+  width: 80%;
+  height: 110%;
+  border-radius: 50%;
+  border-bottom-left-radius: 10000% !important;
+  border-left: 0.4vw solid #f2f2f2;
+  position: relative;
+}
+
+.opty__arrow .arrow__line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0.9;
+  right: 0;
+  transform: rotate(deg);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-bottom-left-radius: 10000% !important;
+  border-left: 0.4vw solid #f2f2f2;
+}
+
+.opty__arrow .arrow__head {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  right: -50%;
+  margin: auto;
+  transform: rotate(-130deg);
+  width: 7vw;
+  height: 5vw;
+  border-radius: 5%;
+  border-bottom-right-radius: 1000%;
+  border-left: 0.1vw solid #f2f2f2;
+  border-bottom: 0.2vw solid #f2f2f2;
+  background: linear-gradient(
+    -146deg,
+    transparent 50%,
+    #f2f2f2 51%,
+    #f2f2f2 52%,
+    transparent 53%,
+    transparent 54%,
+    #f2f2f2 55%,
+    #f2f2f2 56%,
+    transparent 57%,
+    transparent 59%,
+    #f2f2f2 61%,
+    #f2f2f2 62%,
+    transparent 63%,
+    transparent 65%,
+    #f2f2f2 66%,
+    #f2f2f2 67%,
+    transparent 68%,
+    transparent 75%,
+    #f2f2f2 76%,
+    #f2f2f2 77%,
+    transparent 78%,
+    transparent 80%,
+    #f2f2f2 81%,
+    #f2f2f2 82%,
+    transparent 83%,
+    transparent 85%,
+    #f2f2f2 86%,
+    #f2f2f2 87%,
+    transparent 88%,
+    transparent 89%,
+    #f2f2f2 90%,
+    #f2f2f2 91%,
+    transparent 92%,
+    transparent 95%,
+    #f2f2f2 96%,
+    #f2f2f2 100%
+  );
+  box-shadow: 0.2vw 0 0 #f2f2f2 inset, 0 -0.2vw 0 #f2f2f2 inset;
+  z-index: -1;
+}
+
+.opty__arrow .arrow__head::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #121212;
+  left: -10%;
+  top: -10%;
+  width: 200%;
+  height: 100%;
+  transform: rotate(37deg);
+}
+
+.opty__arrow .arrow__head::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80%;
+  transform: rotate(-15deg);
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    -146deg,
+    transparent 50%,
+    #f2f2f2 51%,
+    #f2f2f2 52%,
+    transparent 53%,
+    transparent 54%,
+    #f2f2f2 55%,
+    #f2f2f2 56%,
+    transparent 57%,
+    transparent 59%,
+    #f2f2f2 61%,
+    #f2f2f2 62%,
+    transparent 63%,
+    transparent 65%,
+    #f2f2f2 66%,
+    #f2f2f2 67%,
+    transparent 68%,
+    transparent 75%,
+    #f2f2f2 76%,
+    #f2f2f2 77%,
+    transparent 78%,
+    transparent 80%,
+    #f2f2f2 81%,
+    #f2f2f2 82%,
+    transparent 83%,
+    transparent 85%,
+    #f2f2f2 86%,
+    #f2f2f2 87%,
+    transparent 88%,
+    transparent 89%,
+    #f2f2f2 90%,
+    #f2f2f2 91%,
+    transparent 92%,
+    transparent 95%,
+    #f2f2f2 96%,
+    #f2f2f2 100%
+  );
+}
+.scroll {
+  color: #f2f2f2;
+  margin-left: 4vw;
+}
+
+.arrow__text {
+  font-size: 2vmax;
+  text-transform: capitalize;
+}
+
+.horizontal__scroll-gallery {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.horizontal__scroll-gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.horizontal__scroll__gallery-img {
+  height: 15rem;
+}
+
+@media (min-width: 40rem) {
+  .encyclopedia {
+    margin: 10vh 0 15vh 0;
+  }
+
+  .horizontal__scroll-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  .horizontal__scroll-p {
+    font-size: 2.5vw;
+  }
+
+  .horizontal__scroll__gallery-img {
+    height: 35rem;
+  }
+}
