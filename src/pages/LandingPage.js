@@ -4,6 +4,7 @@ import bell from '../assets/h1380-0cce1.jpg';
 import woolf from '../assets/087dacdb43f5bf5cca958d9100145272.jpg';
 import './landingPage.css';
 import { LandingPageImage } from '../Animations/LandingPageImage';
+import { EncyclopediaLanding } from '../components/EncyclopediaLanding';
 
 export const LandingPage = () => {
   return (
@@ -37,9 +38,7 @@ export const LandingPage = () => {
         </p>
       </div>
       <LandingPageImage />
-      <div className="landing_encyclopedia">
-        <h2 className="encyclopedia">encyclopedia</h2>
-      </div>
+      <EncyclopediaLanding />
       <div className="landing__contribute">
         <p className="landing__p">
           <span className="landing__p-span">(xxxx)</span> Lorem ipsum dolor sit
