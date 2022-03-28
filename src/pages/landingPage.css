@@ -15,23 +15,6 @@
   font-size: 3.5vw;
 }
 
-.landing__images {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
-
-.landing_woolf {
-  height: 20rem;
-  justify-self: center;
-}
-
-.landing_bell {
-  height: 25rem;
-  justify-self: center;
-}
-
 .landing__content-two {
   height: 100vh;
   color: #f2f2f2;
@@ -50,18 +33,6 @@ footer {
   justify-content: space-around;
 }
 
-@media (min-width: 40rem) {
-  .landing__images {
-    grid-template-columns: 1fr 1fr;
-  }
-  .landing_woolf {
-    grid-column: 1/2;
-    height: 30rem;
-    justify-self: end;
-  }
+/* @media (min-width: 40rem) {
 
-  .landing_bell {
-    height: 37rem;
-    justify-self: start;
-  }
-}
+} */
