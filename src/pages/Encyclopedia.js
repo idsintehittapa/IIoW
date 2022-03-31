@@ -9,6 +9,24 @@ export const Encyclopedia = () => {
   return (
     <section className="encyclopedia__wrapper">
       <h1 className="encyclopedia__title">Encyclopedia</h1>
+      <div>
+        <div className="arrow__container-encyclopedia ">
+          <div className="col s3 m3 l3">
+            <div className="first__opty-arrow">
+              <div className="first__arrow-line">
+                <div className="arrow__text-wrapper">
+                  <p className="arrow__text">choose</p>
+                </div>
+              </div>
+              <div className="first__arrow-head"></div>
+              <div className="second__opty-arrow">
+                <div className="second__arrow-line"></div>
+                <div className="second__arrow-head"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="encyclopedia__searchbar">
         <div className="encyclopedia__searchbar-filter">
           <p>nr 1</p>
@@ -21,32 +39,8 @@ export const Encyclopedia = () => {
         </div>
       </div>
       <div className="encyclopedia__photos">
-        <div className="encyclopedia__arrow">
-          <div className="first__opty-arrow">
-            <div className="first__arrow-line">
-              {/* <div class="scroll">
-              <p className="arrow__text">scroll</p>
-            </div> */}
-            </div>
-            <div className="first__arrow-head"></div>
-          </div>
-          <div className="second__opty-arrow">
-            <div className="second__arrow-line">
-              {/* <div class="scroll">
-              <p className="arrow__text">scroll</p>
-            </div> */}
-            </div>
-            <div className="second__arrow_head"></div>
-          </div>
-        </div>
-        {/* <div>
-          <div className="polaroid__frame">
-            <img className="polaroid__photo" src={toniMorrison} alt="#" />
-          </div>
-        </div> */}
+        <p>helooo</p>
       </div>
-      <div className="horizontal__scroll-p">Pick your poison</div>
-      {/* <div className="hanna"></div> */}
     </section>
   );
 };
