@@ -8,11 +8,13 @@
 }
 
 .landing__p {
-  font-size: 4.5vw;
+  /* font-size: 4.5vw; */
+  font-size: calc(20px + 2vmin);
 }
 
 .landing__p-span {
-  font-size: 3.5vw;
+  /* font-size: 3.5vw; */
+  font-size: calc(20px + 1vmin);
 }
 
 .landing__content-two {

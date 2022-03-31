@@ -1,26 +1,280 @@
 .encyclopedia__wrapper {
+  color: #f2f2f2;
   width: 100vw;
   height: 100vh;
-  color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .encyclopedia__title {
-  font-size: 12.5vw;
+  font-size: calc(10px + 6.5vmin);
   margin: 1rem 0 3rem 1rem;
+  grid-column: 1 / span 2;
+  grid-row: 1 / 1;
 }
 
-.hanna {
+.encyclopedia__searchbar {
+  grid-column: 1 / span 3;
+  grid-row: 2 / 2;
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.encyclopedia__searchbar-filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.encyclopedia__photos {
+  grid-column: 1 / span 3;
+  grid-row: 3 / 3;
+  height: 20vh;
+}
+
+.encyclopedia__arrow {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: space-evenly;
+}
+
+.first__opty-arrow {
+  position: relative;
+  height: 25vw;
+  width: 0vw;
+}
+
+.first__opty-arrow .first__arrow-line {
+  width: 100%;
+  height: 110%;
+  border-radius: 50%;
+  border-bottom-left-radius: 10000% !important;
+  border-left: 0.4vw solid #f2f2f2;
+  position: relative;
+  transform: rotate(165deg);
+}
+
+.first__opty-arrow .first__arrow-line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0.9;
+  right: 0;
+  transform: rotate(deg);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-bottom-left-radius: 10000% !important;
+  border-left: 0.4vw solid #f2f2f2;
+}
+
+.first__opty-arrow .first__arrow-head {
+  display: block;
+  position: absolute;
+  left: -10;
+  top: 0%;
+  right: -50%;
+  margin: auto;
+  transform: rotate(110deg);
+  width: 7vw;
+  height: 5vw;
+  border-radius: 5%;
+  border-bottom-right-radius: 1000%;
+  border-left: 0.1vw solid #f2f2f2;
+  border-bottom: 0.2vw solid #f2f2f2;
+  background: linear-gradient(
+    -146deg,
+    transparent 50%,
+    #f2f2f2 51%,
+    #f2f2f2 52%,
+    transparent 53%,
+    transparent 54%,
+    #f2f2f2 55%,
+    #f2f2f2 56%,
+    transparent 57%,
+    transparent 59%,
+    #f2f2f2 61%,
+    #f2f2f2 62%,
+    transparent 63%,
+    transparent 65%,
+    #f2f2f2 66%,
+    #f2f2f2 67%,
+    transparent 68%,
+    transparent 75%,
+    #f2f2f2 76%,
+    #f2f2f2 77%,
+    transparent 78%,
+    transparent 80%,
+    #f2f2f2 81%,
+    #f2f2f2 82%,
+    transparent 83%,
+    transparent 85%,
+    #f2f2f2 86%,
+    #f2f2f2 87%,
+    transparent 88%,
+    transparent 89%,
+    #f2f2f2 90%,
+    #f2f2f2 91%,
+    transparent 92%,
+    transparent 95%,
+    #f2f2f2 96%,
+    #f2f2f2 100%
+  );
+  box-shadow: 0.2vw 0 0 #f2f2f2 inset, 0 -0.2vw 0 #f2f2f2 inset;
+  z-index: -1;
+}
+
+.first__opty-arrow .first__arrow-head::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #121212;
+  left: -10%;
+  top: -10%;
+  width: 200%;
+  height: 100%;
+  transform: rotate(37deg);
+}
+
+.first__opty-arrow .first__arrow-head::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80%;
+  transform: rotate(-15deg);
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    -146deg,
+    transparent 50%,
+    #f2f2f2 51%,
+    #f2f2f2 52%,
+    transparent 53%,
+    transparent 54%,
+    #f2f2f2 55%,
+    #f2f2f2 56%,
+    transparent 57%,
+    transparent 59%,
+    #f2f2f2 61%,
+    #f2f2f2 62%,
+    transparent 63%,
+    transparent 65%,
+    #f2f2f2 66%,
+    #f2f2f2 67%,
+    transparent 68%,
+    transparent 75%,
+    #f2f2f2 76%,
+    #f2f2f2 77%,
+    transparent 78%,
+    transparent 80%,
+    #f2f2f2 81%,
+    #f2f2f2 82%,
+    transparent 83%,
+    transparent 85%,
+    #f2f2f2 86%,
+    #f2f2f2 87%,
+    transparent 88%,
+    transparent 89%,
+    #f2f2f2 90%,
+    #f2f2f2 91%,
+    transparent 92%,
+    transparent 95%,
+    #f2f2f2 96%,
+    #f2f2f2 100%
+  );
+}
+
+.second__opty-arrow {
+  position: relative;
+  height: 35vw;
+  width: 3vw;
+}
+
+.second__opty-arrow .second__arrow-line {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-bottom-left-radius: 10000% !important;
+  border-left: 0.2vw solid #ffffff;
+  z-index: 2;
+  position: relative;
+  transform: rotate(160deg);
+}
+
+.second__opty-arrow .second__arrow-line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0.9;
+  right: 0;
+  transform: rotate(deg);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-bottom-left-radius: 10000% !important;
+  border-left: 0.4vw solid #212121;
+  z-index: 2;
+}
+
+.polaroid__frame {
+  /* height: 25vh;
+  width: 20; */
+  /* background: url('../assets/backgroundLiv.png'); */
+  background-size: 100px 100px;
+  /* display: inline-block; */
+  /* background: #ffffff; */
+  /* margin: 55px 75px 30px; */
+  padding: 1rem 1rem 3rem;
+  /* background: radial-gradient(#121212 0.3rem, transparent 0.4rem),
+    radial-gradient(#ebf8e1, #f2f2f2), #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;*/
+  -webkit-box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(201, 201, 201, 0.3);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+}
+
+.polaroid__photo {
+  height: 50%;
+}
+
+.horizontal__scroll-p {
+  grid-column: 1 / span 3;
+  grid-row: 4 / 4;
+}
+
+/* .hanna {
   background-image: linear-gradient(rgba(75, 75, 75, 0.3), rgba(0, 0, 0, 0.3)),
     url('../assets/HannahArendt2.png');
   height: 50vh;
+  grid-column: 1 / span 3;
+  grid-row: 4 / 4;
   display: block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 3rem;
-  filter: blur(0.5px);
-  /* -webkit-filter: blur(0.5px); */
-}
+  /* -webkit-clip-path: circle(13% at 53% 41%);
+  clip-path: circle(13% at 53% 41%); */
+/* filter: blur(0.5px); */
+/* clip-path: polygon(
+    0% 5%,
+    100% 5%,
+    100% 25%,
+    0% 24%,
+    0% 37%,
+    100% 28%,
+    96% 60%,
+    0% 64%,
+    0% 75%,
+    96% 64%,
+    100% 98%,
+    0% 99%
+); 
+}*/
