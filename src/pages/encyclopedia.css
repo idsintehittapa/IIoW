@@ -1,0 +1,353 @@
+.encyclopedia__wrapper {
+  color: #f2f2f2;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr 3fr;
+  grid-template-columns: 1fr;
+}
+
+.encyclopedia__title {
+  font-size: calc(10px + 6.5vmin);
+  margin: 1rem 0 3rem 1rem;
+  grid-row: 1 / 1;
+}
+
+.arrow__container-encyclopedia {
+  padding: 4rem;
+}
+
+.first__opty-arrow {
+  position: relative;
+  height: calc(10px + 3vmin);
+  width: calc(5px+ 25vmin);
+}
+
+.first__opty-arrow .first__arrow-line {
+  width: 80%;
+  height: 110%;
+  border-radius: 50%;
+  border-bottom-left-radius: 10000% !important;
+  border-left: 0.4vw solid #f2f2f2;
+  position: relative;
+  top: -25%;
+  transform: rotate(10deg);
+}
+
+.first__opty-arrow .first__arrow-line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0.9;
+  right: 0;
+  transform: rotate(deg);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-bottom-left-radius: 10000% !important;
+  border-left: 0.4vw solid #f2f2f2;
+}
+
+.first__opty-arrow .first__arrow-head {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 60%;
+  right: -50%;
+  margin: auto;
+  transform: rotate(-100deg);
+  width: 4vw;
+  height: 3vw;
+  border-radius: 5%;
+  border-bottom-right-radius: 1000%;
+  border-left: 0.1vw solid #f2f2f2;
+  border-bottom: 0.2vw solid #f2f2f2;
+  background: linear-gradient(
+    -146deg,
+    transparent 50%,
+    #f2f2f2 51%,
+    #f2f2f2 52%,
+    transparent 53%,
+    transparent 54%,
+    #f2f2f2 55%,
+    #f2f2f2 56%,
+    transparent 57%,
+    transparent 59%,
+    #f2f2f2 61%,
+    #f2f2f2 62%,
+    transparent 63%,
+    transparent 65%,
+    #f2f2f2 66%,
+    #f2f2f2 67%,
+    transparent 68%,
+    transparent 75%,
+    #f2f2f2 76%,
+    #f2f2f2 77%,
+    transparent 78%,
+    transparent 80%,
+    #f2f2f2 81%,
+    #f2f2f2 82%,
+    transparent 83%,
+    transparent 85%,
+    #f2f2f2 86%,
+    #f2f2f2 87%,
+    transparent 88%,
+    transparent 89%,
+    #f2f2f2 90%,
+    #f2f2f2 91%,
+    transparent 92%,
+    transparent 95%,
+    #f2f2f2 96%,
+    #f2f2f2 100%
+  );
+  box-shadow: 0.2vw 0 0 #f2f2f2 inset, 0 -0.2vw 0 #f2f2f2 inset;
+  z-index: -1;
+}
+
+.first__opty-arrow .first__arrow-head::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #121212;
+  left: -10%;
+  top: -10%;
+  width: 200%;
+  height: 100%;
+  transform: rotate(37deg);
+}
+
+.first__opty-arrow .first__arrow-head::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80%;
+  transform: rotate(-15deg);
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    -146deg,
+    transparent 50%,
+    #f2f2f2 51%,
+    #f2f2f2 52%,
+    transparent 53%,
+    transparent 54%,
+    #f2f2f2 55%,
+    #f2f2f2 56%,
+    transparent 57%,
+    transparent 59%,
+    #f2f2f2 61%,
+    #f2f2f2 62%,
+    transparent 63%,
+    transparent 65%,
+    #f2f2f2 66%,
+    #f2f2f2 67%,
+    transparent 68%,
+    transparent 75%,
+    #f2f2f2 76%,
+    #f2f2f2 77%,
+    transparent 78%,
+    transparent 80%,
+    #f2f2f2 81%,
+    #f2f2f2 82%,
+    transparent 83%,
+    transparent 85%,
+    #f2f2f2 86%,
+    #f2f2f2 87%,
+    transparent 88%,
+    transparent 89%,
+    #f2f2f2 90%,
+    #f2f2f2 91%,
+    transparent 92%,
+    transparent 95%,
+    #f2f2f2 96%,
+    #f2f2f2 100%
+  );
+}
+
+.second__opty-arrow {
+  position: relative;
+  height: calc(10px + 3vmin);
+  width: 20vw;
+}
+
+.second__opty-arrow .second__arrow-line {
+  width: 80%;
+  height: 110%;
+  right: 80%;
+  top: -120%;
+  border-radius: 50%;
+  border-bottom-right-radius: 10000% !important;
+  border-right: 0.4vw solid #f2f2f2;
+  position: relative;
+  transform: rotate(-20deg);
+}
+
+.second__opty-arrow .second__arrow-line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  opacity: 0.9;
+  right: -1;
+  transform: rotate(deg);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-bottom-right-radius: 10000% !important;
+  border-right: 0.4vw solid #f2f2f2;
+}
+
+.second__opty-arrow .second__arrow-head {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -85%;
+  margin: auto;
+  transform: rotate(50deg);
+  width: 5vw;
+  height: 3vw;
+  border-radius: 5%;
+  border-bottom-right-radius: 1000%;
+  border-right: 0.1vw solid #f2f2f2;
+  border-bottom: 0.2vw solid #f2f2f2;
+  background: linear-gradient(
+    -146deg,
+    transparent 50%,
+    #f2f2f2 51%,
+    #f2f2f2 52%,
+    transparent 53%,
+    transparent 54%,
+    #f2f2f2 55%,
+    #f2f2f2 56%,
+    transparent 57%,
+    transparent 59%,
+    #f2f2f2 61%,
+    #f2f2f2 62%,
+    transparent 63%,
+    transparent 65%,
+    #f2f2f2 66%,
+    #f2f2f2 67%,
+    transparent 68%,
+    transparent 75%,
+    #f2f2f2 76%,
+    #f2f2f2 77%,
+    transparent 78%,
+    transparent 80%,
+    #f2f2f2 81%,
+    #f2f2f2 82%,
+    transparent 83%,
+    transparent 85%,
+    #f2f2f2 86%,
+    #f2f2f2 87%,
+    transparent 88%,
+    transparent 89%,
+    #f2f2f2 90%,
+    #f2f2f2 91%,
+    transparent 92%,
+    transparent 95%,
+    #f2f2f2 96%,
+    #f2f2f2 100%
+  );
+  box-shadow: 0.2vw 0 0 #f2f2f2 inset, 0 -0.2vw 0 #f2f2f2 inset;
+  z-index: -1;
+}
+
+.second__opty-arrow .second__arrow-head::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #121212;
+  left: -10%;
+  top: -10%;
+  width: 200%;
+  height: 100%;
+  transform: rotate(37deg);
+}
+
+.second__opty-arrow .second__arrow-head::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 80%;
+  transform: rotate(-15deg);
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    -146deg,
+    transparent 50%,
+    #f2f2f2 51%,
+    #f2f2f2 52%,
+    transparent 53%,
+    transparent 54%,
+    #f2f2f2 55%,
+    #f2f2f2 56%,
+    transparent 57%,
+    transparent 59%,
+    #f2f2f2 61%,
+    #f2f2f2 62%,
+    transparent 63%,
+    transparent 65%,
+    #f2f2f2 66%,
+    #f2f2f2 67%,
+    transparent 68%,
+    transparent 75%,
+    #f2f2f2 76%,
+    #f2f2f2 77%,
+    transparent 78%,
+    transparent 80%,
+    #f2f2f2 81%,
+    #f2f2f2 82%,
+    transparent 83%,
+    transparent 85%,
+    #f2f2f2 86%,
+    #f2f2f2 87%,
+    transparent 88%,
+    transparent 89%,
+    #f2f2f2 90%,
+    #f2f2f2 91%,
+    transparent 92%,
+    transparent 95%,
+    #f2f2f2 96%,
+    #f2f2f2 100%
+  );
+}
+
+.arrow__text-wrapper {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: -10%;
+  color: #f2f2f2;
+}
+
+.arrow__text {
+  font-size: 1.5vmax;
+  text-transform: uppercase;
+  margin: 3.5vh 0;
+}
+
+.encyclopedia__searchbar {
+  grid-column: 1 / span 3;
+  grid-row: 2 / 2;
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-between;
+  padding: 1rem;
+  height: min-content;
+}
+
+.encyclopedia__searchbar-filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.encyclopedia__photos {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

@@ -20,7 +20,7 @@
 }
 
 .horizontal__scroll-p {
-  font-size: 4.5vw;
+  font-size: calc(10px + 3.5vmin);
 }
 
 .arrow__container {
@@ -173,6 +173,7 @@
     #f2f2f2 100%
   );
 }
+
 .scroll {
   color: #f2f2f2;
   margin-left: 4vw;

@@ -17,14 +17,14 @@ export const EncyclopediaLanding = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqu
           </p>
           <div className="arrow__container">
-            <div class="col s3 m3 l3">
-              <div class="opty__arrow">
-                <div class="arrow__line">
-                  <div class="scroll">
+            <div className="col s3 m3 l3">
+              <div className="opty__arrow">
+                <div className="arrow__line">
+                  <div className="scroll">
                     <p className="arrow__text">scroll</p>
                   </div>
                 </div>
-                <div class="arrow__head"></div>
+                <div className="arrow__head"></div>
               </div>
             </div>
           </div>
