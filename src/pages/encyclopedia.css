@@ -10,7 +10,6 @@
 .encyclopedia__title {
   font-size: calc(10px + 6.5vmin);
   margin: 1rem 0 3rem 1rem;
-  /* grid-column: 1 / span 2; */
   grid-row: 1 / 1;
 }
 
@@ -348,7 +347,6 @@
 .encyclopedia__photos {
   grid-column: 1 / span 3;
   grid-row: 3 / span 4;
-  /* height: 30vh; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
