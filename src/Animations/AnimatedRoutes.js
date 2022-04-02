@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { LandingPage } from '../pages/LandingPage';
 import { Encyclopedia } from '../pages/Encyclopedia';
+import { NoPage } from '../pages/NoPage';
 
 import { AnimatePresence } from 'framer-motion';
 
@@ -13,6 +14,7 @@ export const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/encyclopedia" element={<Encyclopedia />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </AnimatePresence>
   );
