@@ -8,6 +8,8 @@
   margin: 5vh 0 5vh 0vh;
   font-size: 4.5vmax;
   text-transform: uppercase;
+  color: #f2f2f2;
+  text-decoration: dashed;
 }
 
 .horizontal__scroll-wrapper {

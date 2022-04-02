@@ -1,15 +1,11 @@
 import React from 'react';
-import { LandingPage } from './pages/LandingPage';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Encyclopedia } from './pages/Encyclopedia';
+import { BrowserRouter } from 'react-router-dom';
+import { AnimatedRoutes } from './Animations/AnimatedRoutes';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="/encyclopedia" element={<Encyclopedia />} />
-      </Routes>
+      <AnimatedRoutes />
     </BrowserRouter>
   );
 }
