@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './encyclopediaLanding.css';
 
 import toniMorrison from '../assets/GettyImages_514704088_header.jpg';
@@ -9,7 +10,9 @@ import sylviaPlath from '../assets/Sylvia-Plath.jpg';
 export const EncyclopediaLanding = () => {
   return (
     <div className="landing_encyclopedia">
-      <h2 className="encyclopedia">enter encyclopedia</h2>
+      <Link to="/encyclopedia">
+        <h2 className="encyclopedia">enter encyclopedia</h2>
+      </Link>
       <div className="horizontal__scroll-wrapper">
         <div>
           <p className="horizontal__scroll-p">

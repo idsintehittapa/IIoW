@@ -1,3 +1,23 @@
+.test {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 30rem 30rem;
+  background: url('../assets/backgroundLivPink.png');
+}
+
+.test2 {
+  position: relative;
+  z-index: -50;
+  width: 100vw;
+  background-color: aliceblue;
+}
+
 .encyclopedia__wrapper {
   color: #f2f2f2;
   width: 100vw;
