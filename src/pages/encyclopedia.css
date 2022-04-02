@@ -11,13 +11,6 @@
   background: url('../assets/backgroundLivPink.png');
 }
 
-.test2 {
-  position: relative;
-  z-index: -50;
-  width: 100vw;
-  background-color: aliceblue;
-}
-
 .encyclopedia__wrapper {
   color: #f2f2f2;
   width: 100vw;
