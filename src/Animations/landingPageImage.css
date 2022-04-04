@@ -1,6 +1,5 @@
 @keyframes move {
   100% {
-    transition-delay: 1s;
     transform: translate3d(0);
     -webkit-transform: translate3d(0);
     -moz-transform: translate3d(0);
@@ -23,7 +22,7 @@
     url('../assets/HannahArendt.jpg');
   background-position: center;
   background-size: cover;
-  animation: move 1.5s;
+  animation: move 3s;
   background-attachment: fixed;
 }
 

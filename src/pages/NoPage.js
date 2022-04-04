@@ -1,5 +1,5 @@
 import React from 'react';
-import Hannah from '../assets/HannahArendt2.png';
+// import Hannah from '../assets/HannahArendt2.png';
 import './noPage.css';
 
 export const NoPage = () => {
