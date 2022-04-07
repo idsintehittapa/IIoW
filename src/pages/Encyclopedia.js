@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import './encyclopedia.css';
+import { EncyclopediaFiltering } from '../components/EncyclopediaFiltering';
 
 export const Encyclopedia = () => {
   const blackBox = {
@@ -46,20 +47,7 @@ export const Encyclopedia = () => {
             </div>
           </div>
         </div>
-        <div className="encyclopedia__searchbar">
-          <div className="encyclopedia__searchbar-filter">
-            <p>nr 1</p>
-            <p>nr 2</p>
-            <p>nr 3</p>
-            <p>nr 4</p>
-          </div>
-          <div className="encyclopedia__searchbar-search">
-            <p>SEARCH</p>
-          </div>
-        </div>
-        <div className="encyclopedia__photos">
-          <p>helooo</p>
-        </div>
+        <EncyclopediaFiltering />
       </section>
     </>
   );
