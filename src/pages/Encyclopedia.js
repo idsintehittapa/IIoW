@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import './encyclopedia.css';
-import { EncyclopediaFiltering } from '../components/EncyclopediaFiltering';
+import { Thinkers } from '../components/Thinkers';
 
 export const Encyclopedia = () => {
   const blackBox = {
@@ -47,7 +47,7 @@ export const Encyclopedia = () => {
             </div>
           </div>
         </div>
-        <EncyclopediaFiltering />
+        <Thinkers />
       </section>
     </>
   );

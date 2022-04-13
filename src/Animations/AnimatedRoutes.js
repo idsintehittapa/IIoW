@@ -5,6 +5,7 @@ import { Encyclopedia } from '../pages/Encyclopedia';
 import { NoPage } from '../pages/NoPage';
 
 import { AnimatePresence } from 'framer-motion';
+import { Thinker } from '../pages/Thinker';
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -14,6 +15,7 @@ export const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/encyclopedia" element={<Encyclopedia />} />
+        <Route exact path="/encyclopedia/:id" element={<Thinker />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </AnimatePresence>
