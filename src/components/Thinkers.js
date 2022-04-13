@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import { GET_THINKER } from '../queries/queries';
+import { GET_THINKERS } from '../queries/queries';
 
 import '../pages/encyclopedia.css';
 
-export const EncyclopediaFiltering = () => {
-  const { data, loading, error } = useQuery(GET_THINKER);
+export const Thinkers = () => {
+  const { data, loading, error } = useQuery(GET_THINKERS);
   const [filteredData, setFilteredData] = useState(data);
 
   if (loading) return 'Loading...';
@@ -85,9 +86,11 @@ export const EncyclopediaFiltering = () => {
       </div>
       <div className="encyclopedia__query">
         {filteredData?.map((thinker) => (
-          <div key={thinker.id}>
-            <p>{thinker.name}</p>
-          </div>
+          <Link to={`${thinker.id}`}>
+            <div key={thinker.id}>
+              <p>{thinker.name}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </>
