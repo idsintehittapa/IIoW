@@ -20,3 +20,13 @@ export const GET_THINKERS = gql`
     }
   }
 `;
+
+export const GET_THINKER_DETAIL = gql`
+  query getThinkerId($thinker_id: uuid!) {
+    thinker_person_by_pk(id: $thinker_id) {
+      id
+      name
+      country
+    }
+  }
+`;
