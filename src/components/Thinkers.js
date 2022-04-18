@@ -86,8 +86,8 @@ export const Thinkers = () => {
       </div>
       <div className="encyclopedia__query">
         {filteredData?.map((thinker) => (
-          <Link to={`${thinker.id}`}>
-            <div key={thinker.id}>
+          <Link to={`${thinker.id}`} key={thinker.id}>
+            <div>
               <p>{thinker.name}</p>
             </div>
           </Link>

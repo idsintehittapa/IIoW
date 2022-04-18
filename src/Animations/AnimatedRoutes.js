@@ -2,10 +2,10 @@ import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { LandingPage } from '../pages/LandingPage';
 import { Encyclopedia } from '../pages/Encyclopedia';
+import { Thinker } from '../pages/Thinker';
 import { NoPage } from '../pages/NoPage';
 
 import { AnimatePresence } from 'framer-motion';
-import { Thinker } from '../pages/Thinker';
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
