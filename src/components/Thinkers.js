@@ -12,7 +12,7 @@ export const Thinkers = () => {
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
 
-  const filter = () => {
+  const filterPhilosopher = () => {
     const fd = data.thinker_person.filter((thinker) => {
       let found = false;
       thinker.person_categories.map((category) => {
@@ -64,7 +64,10 @@ export const Thinkers = () => {
     <>
       <div className="encyclopedia__searchbar">
         <div className="encyclopedia__searchbar-filter">
-          <button className="encyclopedia__button" onClick={() => filter()}>
+          <button
+            className="encyclopedia__button"
+            onClick={() => filterPhilosopher()}
+          >
             philosopher
           </button>
           <button className="encyclopedia__button" onClick={() => filterBF()}>
@@ -88,7 +91,7 @@ export const Thinkers = () => {
         {filteredData?.map((thinker) => (
           <Link to={`${thinker.id}`} key={thinker.id}>
             <div>
-              <p>{thinker.name}</p>
+              <p className="thinker__name">{thinker.name}</p>
             </div>
           </Link>
         ))}
