@@ -1,7 +1,7 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { GET_THINKER_DETAIL } from '../queries/queries';
-import { Link, useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import '../pages/thinker.css';
 
@@ -11,6 +11,8 @@ export const Thinker = () => {
     variables: { thinker_id: id }
   });
 
+  const navigate = useNavigate();
+
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
 
@@ -19,9 +21,7 @@ export const Thinker = () => {
   return (
     <>
       <div>
-        <Link to="/encyclopedia">
-          <p>Back</p>
-        </Link>
+        <button onClick={() => navigate(-1)}>Go back</button>
       </div>
       <div>
         <p className="landing__p">{data.thinker_person_by_pk.name}</p>
