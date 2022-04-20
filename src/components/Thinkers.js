@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { GET_THINKERS } from '../queries/queries';
@@ -7,7 +7,18 @@ import '../pages/encyclopedia.css';
 
 export const Thinkers = () => {
   const { data, loading, error } = useQuery(GET_THINKERS);
-  const [filteredData, setFilteredData] = useState(data);
+
+  const [filteredData, setFilteredData] = useState(() => {
+    // getting stored value
+    const saved = localStorage.getItem('filteredThinker');
+    const initialValue = JSON.parse(saved);
+    return initialValue || data;
+  });
+
+  useEffect(() => {
+    // storing input filtering
+    localStorage.setItem('filteredThinker', JSON.stringify(filteredData));
+  }, [filteredData]);
 
   if (loading) return 'Loading...';
   if (error) return `Error! ${error.message}`;
