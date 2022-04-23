@@ -10,7 +10,7 @@ export const GalleryLanding = () => {
   return (
     <section className="gallery__wrapping">
       <div className="gallery__images">
-        <div className="woolf__wrapper">
+        <div className="img__wrapper">
           <img className="landing__woolf" src={woolf} alt="virginia woolf" />
           <img
             alt="virginia woolf overlay"
@@ -18,7 +18,7 @@ export const GalleryLanding = () => {
             src={woolfOverlay}
           />
         </div>
-        <div className="woolf__wrapper">
+        <div className="img__wrapper">
           <img className="landing__bell" src={bell} alt="bell hooks" />
           <img
             alt="bell hooks overlay"

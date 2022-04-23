@@ -15,9 +15,10 @@
   gap: 3rem;
 }
 
-.woolf__wrapper {
+.img__wrapper {
   position: relative;
   max-height: 50rem;
+  perspective: 700px;
 }
 
 .landing__woolf {
@@ -38,6 +39,7 @@
   width: 100%;
   opacity: 0;
   transition: 0.3s ease-out;
+  transform-style: preserve-3d;
 }
 
 .overlay:hover {
