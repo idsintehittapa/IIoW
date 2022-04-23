@@ -2,10 +2,40 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './encyclopediaLanding.css';
 
-import toniMorrison from '../assets/GettyImages_514704088_header.jpg';
-import audryLorde from '../assets/gettyimages-694880169-copy.jpg';
-import simoneDeBeauvoir from '../assets/simone-de-beauvoir.png';
-import sylviaPlath from '../assets/Sylvia-Plath.jpg';
+const scrollGalleryImages = [
+  {
+    src: require('../assets/GettyImages_514704088_header.jpg'),
+    alt: 'toni morrison'
+  },
+  {
+    src: require('../assets/gettyimages-694880169-copy.jpg'),
+    alt: 'audry lorde'
+  },
+  {
+    src: require('../assets/Sylvia-Plath.jpg'),
+    alt: 'sylvia plath'
+  },
+  {
+    src: require('../assets/Liv_Stromquist.png'),
+    alt: 'liv stromquist'
+  },
+  {
+    src: require('../assets/simone-de-beauvoir.png'),
+    alt: 'simone de beauvoir'
+  },
+  {
+    src: require('../assets/Butler.jpg'),
+    alt: 'judith butler'
+  },
+  {
+    src: require('../assets/bettyF.png'),
+    alt: 'betty friedan'
+  },
+  {
+    src: require('../assets/crf.png'),
+    alt: 'caroline ringskog ferrada-noli'
+  }
+];
 
 export const EncyclopediaLanding = () => {
   return (
@@ -33,34 +63,15 @@ export const EncyclopediaLanding = () => {
           </div>
         </div>
         <div className="horizontal__scroll-gallery">
-          <div className="horizontal__scroll-gallery-container">
-            <img
-              className="horizontal__scroll__gallery-img"
-              src={toniMorrison}
-              alt="toni morrison"
-            />
-          </div>
-          <div className="horizontal__scroll-gallery-container">
-            <img
-              className="horizontal__scroll__gallery-img"
-              src={simoneDeBeauvoir}
-              alt="simone de beauvoir"
-            />
-          </div>
-          <div className="horizontal__scroll-gallery-container">
-            <img
-              className="horizontal__scroll__gallery-img"
-              src={sylviaPlath}
-              alt="sylvia plath"
-            />
-          </div>
-          <div className="horizontal__scroll-gallery-container">
-            <img
-              className="horizontal__scroll__gallery-img"
-              src={audryLorde}
-              alt="audry lorde"
-            />
-          </div>
+          {scrollGalleryImages.map((image, index) => (
+            <div className="horizontal__scroll-gallery-container" key={index}>
+              <img
+                className="horizontal__scroll__gallery-img"
+                src={image.src}
+                alt={image.alt}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
