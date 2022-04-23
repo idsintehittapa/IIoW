@@ -2,7 +2,7 @@ import React from 'react';
 import './hero.css';
 
 export const Hero = () => {
-  const scrollGalleryImages2 = [
+  const scrollGalleryImages = [
     {
       src: require('../assets/GettyImages_514704088_header.jpg'),
       alt: 'toni morrison'
@@ -80,7 +80,7 @@ export const Hero = () => {
   return (
     <>
       <header className="hero__image">
-        {scrollGalleryImages2.map((image, index) => (
+        {scrollGalleryImages.map((image, index) => (
           <div className="hero__gallery" key={index}>
             <img src={image.src} alt={image.alt} />
           </div>
