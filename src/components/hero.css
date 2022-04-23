@@ -1,16 +1,37 @@
 .hero__image {
-  background-image: linear-gradient(rgba(75, 75, 75, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../assets/sontage.jpg');
   height: 100vh;
-  display: block;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* filter: blur(0.5px); */
-  /* -webkit-filter: blur(0.5px); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   position: relative;
-  background-attachment: fixed;
+  overflow: hidden;
 }
+
+.hero__gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  position: relative;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.hero__gallery img {
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: auto;
+  margin: auto;
+  /* transform-origin: 50% 0; */
+  transform: scale(0.8);
+  transition: transform 1s ease-out;
+}
+
+.hero__gallery:hover img {
+  transform: scale(0.5);
+}
+
 
 .hero__title {
   text-align: start;
@@ -20,4 +41,14 @@
   transform: translate(-50%, -80%);
   color: white;
   font-size: 9.9vw;
+}
+
+@media (min-width: 40rem) {
+  .hero__image {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .hero__gallery {
+    height: 35rem;
+  }
 }
