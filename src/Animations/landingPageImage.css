@@ -15,11 +15,7 @@
 
 .landing__img-animation {
   height: 50vh;
-  background-image: linear-gradient(
-      rgba(255, 69, 69, 0.3),
-      rgba(232, 1, 1, 0.3)
-    ),
-    url('../assets/HannahArendt.jpg');
+  background-image: url('../assets/HannahArendt.jpg');
   background-position: center;
   background-size: cover;
   animation: move 3s;
