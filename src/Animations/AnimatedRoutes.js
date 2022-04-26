@@ -1,5 +1,7 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { Navbar } from '../components/Navbar';
+
 import { LandingPage } from '../pages/LandingPage';
 import { Encyclopedia } from '../pages/Encyclopedia';
 import { Thinker } from '../pages/Thinker';
@@ -12,6 +14,7 @@ export const AnimatedRoutes = () => {
   return (
     // defines which routes can be animated
     <AnimatePresence>
+      <Navbar />
       <Routes location={location} key={location.pathname}>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/encyclopedia" element={<Encyclopedia />} />
