@@ -1,9 +1,10 @@
 import React from 'react';
 import { Hero } from '../components/Hero';
-import './landingPage.css';
 import { LandingPageImage } from '../Animations/LandingPageImage';
 import { EncyclopediaLanding } from '../components/EncyclopediaLanding';
 import { GalleryLanding } from '../components/GalleryLanding';
+
+import './landingPage.css';
 
 export const LandingPage = () => {
   return (
@@ -21,7 +22,6 @@ export const LandingPage = () => {
         </p>
       </div>
       <GalleryLanding />
-
       <div className="landing__content-two">
         <p className="landing__p">
           <span className="landing__p-span">(xxxx)</span> Lorem ipsum dolor sit
