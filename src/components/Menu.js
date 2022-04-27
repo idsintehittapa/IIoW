@@ -1,21 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const Menu = ({ open }) => {
+export const Menu = ({ open, setOpen }) => {
   return (
     <div className={`menu__overlay ${open ? ' showMenu' : ''}`}>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={() => setOpen(!open)}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/encyclopedia">Encyclopedia</Link>
+          <Link to="/encyclopedia" onClick={() => setOpen(!open)}>
+            Encyclopedia
+          </Link>
         </li>
         <li>
-          <Link to="#">Prologue</Link>
+          <Link to="#" onClick={() => setOpen(!open)}>
+            Prologue
+          </Link>
         </li>
         <li>
-          <Link to="#">Journal</Link>
+          <Link to="/" onClick={() => setOpen(!open)}>
+            Journal
+          </Link>
         </li>
       </ul>
     </div>
