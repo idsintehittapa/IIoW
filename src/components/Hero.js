@@ -20,8 +20,8 @@ export const Hero = () => {
       alt: 'liv stromquist'
     },
     {
-      src: require('../assets/simone-de-beauvoir.png'),
-      alt: 'simone de beauvoir'
+      src: require('../assets/crf.png'),
+      alt: 'caroline ringskog ferrada-noli'
     },
     {
       src: require('../assets/Butler.jpg'),
@@ -32,12 +32,12 @@ export const Hero = () => {
       alt: 'betty friedan'
     },
     {
-      src: require('../assets/crf.png'),
-      alt: 'caroline ringskog ferrada-noli'
+      src: require('../assets/simone-de-beauvoir.png'),
+      alt: 'simone de beauvoir'
     },
     {
-      src: require('../assets/sontage.jpg'),
-      alt: 'susan sontage'
+      src: require('../assets/Sylvia-Plath.jpg'),
+      alt: 'sylvia plath'
     },
     {
       src: require('../assets/GettyImages_514704088_header.jpg'),
@@ -48,8 +48,8 @@ export const Hero = () => {
       alt: 'audry lorde'
     },
     {
-      src: require('../assets/Sylvia-Plath.jpg'),
-      alt: 'sylvia plath'
+      src: require('../assets/sontage.jpg'),
+      alt: 'susan sontage'
     },
     {
       src: require('../assets/Liv_Stromquist.png'),
@@ -58,22 +58,6 @@ export const Hero = () => {
     {
       src: require('../assets/simone-de-beauvoir.png'),
       alt: 'simone de beauvoir'
-    },
-    {
-      src: require('../assets/Butler.jpg'),
-      alt: 'judith butler'
-    },
-    {
-      src: require('../assets/bettyF.png'),
-      alt: 'betty friedan'
-    },
-    {
-      src: require('../assets/crf.png'),
-      alt: 'caroline ringskog ferrada-noli'
-    },
-    {
-      src: require('../assets/sontage.jpg'),
-      alt: 'susan sontage'
     }
   ];
 
@@ -87,7 +71,6 @@ export const Hero = () => {
         ))}
         <h1 className="hero__title">Intellectual Influence of Women</h1>
       </header>
-      <div className="color"></div>
     </>
   );
 };
