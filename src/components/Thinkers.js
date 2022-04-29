@@ -20,8 +20,9 @@ export const Thinkers = () => {
     localStorage.setItem('filteredThinker', JSON.stringify(filteredData));
   }, [filteredData]);
 
-  if (loading) return 'Loading...';
-  if (error) return `Error! ${error.message}`;
+  if (loading) return <div className="encyclopedia__query">Loading...</div>;
+  if (error)
+    return <div className="encyclopedia__query">`Error! ${error.message}`</div>;
 
   const filterPhilosopher = () => {
     const fd = data.thinker_person.filter((thinker) => {

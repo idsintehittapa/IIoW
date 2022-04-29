@@ -1,4 +1,4 @@
-.test {
+/* .test {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -9,7 +9,7 @@
   height: 100%;
   border-radius: 0 0 30rem 30rem;
   background: url('../assets/backgroundLivPink.png');
-}
+} */
 
 .encyclopedia__wrapper {
   color: #f2f2f2;
@@ -27,7 +27,7 @@
 }
 
 .arrow__container-encyclopedia {
-  padding: 4rem;
+  padding: 3rem;
 }
 
 .first__opty-arrow {
@@ -43,7 +43,7 @@
   border-bottom-left-radius: 10000% !important;
   border-left: 0.4vw solid #f2f2f2;
   position: relative;
-  top: -25%;
+  top: 0%;
   transform: rotate(10deg);
 }
 
@@ -76,44 +76,42 @@
   border-bottom-right-radius: 1000%;
   border-left: 0.1vw solid #f2f2f2;
   border-bottom: 0.2vw solid #f2f2f2;
-  background: linear-gradient(
-    -146deg,
-    transparent 50%,
-    #f2f2f2 51%,
-    #f2f2f2 52%,
-    transparent 53%,
-    transparent 54%,
-    #f2f2f2 55%,
-    #f2f2f2 56%,
-    transparent 57%,
-    transparent 59%,
-    #f2f2f2 61%,
-    #f2f2f2 62%,
-    transparent 63%,
-    transparent 65%,
-    #f2f2f2 66%,
-    #f2f2f2 67%,
-    transparent 68%,
-    transparent 75%,
-    #f2f2f2 76%,
-    #f2f2f2 77%,
-    transparent 78%,
-    transparent 80%,
-    #f2f2f2 81%,
-    #f2f2f2 82%,
-    transparent 83%,
-    transparent 85%,
-    #f2f2f2 86%,
-    #f2f2f2 87%,
-    transparent 88%,
-    transparent 89%,
-    #f2f2f2 90%,
-    #f2f2f2 91%,
-    transparent 92%,
-    transparent 95%,
-    #f2f2f2 96%,
-    #f2f2f2 100%
-  );
+  background: linear-gradient(-146deg,
+      transparent 50%,
+      #f2f2f2 51%,
+      #f2f2f2 52%,
+      transparent 53%,
+      transparent 54%,
+      #f2f2f2 55%,
+      #f2f2f2 56%,
+      transparent 57%,
+      transparent 59%,
+      #f2f2f2 61%,
+      #f2f2f2 62%,
+      transparent 63%,
+      transparent 65%,
+      #f2f2f2 66%,
+      #f2f2f2 67%,
+      transparent 68%,
+      transparent 75%,
+      #f2f2f2 76%,
+      #f2f2f2 77%,
+      transparent 78%,
+      transparent 80%,
+      #f2f2f2 81%,
+      #f2f2f2 82%,
+      transparent 83%,
+      transparent 85%,
+      #f2f2f2 86%,
+      #f2f2f2 87%,
+      transparent 88%,
+      transparent 89%,
+      #f2f2f2 90%,
+      #f2f2f2 91%,
+      transparent 92%,
+      transparent 95%,
+      #f2f2f2 96%,
+      #f2f2f2 100%);
   box-shadow: 0.2vw 0 0 #f2f2f2 inset, 0 -0.2vw 0 #f2f2f2 inset;
   z-index: -1;
 }
@@ -139,44 +137,42 @@
   transform: rotate(-15deg);
   top: 0;
   left: 0;
-  background: linear-gradient(
-    -146deg,
-    transparent 50%,
-    #f2f2f2 51%,
-    #f2f2f2 52%,
-    transparent 53%,
-    transparent 54%,
-    #f2f2f2 55%,
-    #f2f2f2 56%,
-    transparent 57%,
-    transparent 59%,
-    #f2f2f2 61%,
-    #f2f2f2 62%,
-    transparent 63%,
-    transparent 65%,
-    #f2f2f2 66%,
-    #f2f2f2 67%,
-    transparent 68%,
-    transparent 75%,
-    #f2f2f2 76%,
-    #f2f2f2 77%,
-    transparent 78%,
-    transparent 80%,
-    #f2f2f2 81%,
-    #f2f2f2 82%,
-    transparent 83%,
-    transparent 85%,
-    #f2f2f2 86%,
-    #f2f2f2 87%,
-    transparent 88%,
-    transparent 89%,
-    #f2f2f2 90%,
-    #f2f2f2 91%,
-    transparent 92%,
-    transparent 95%,
-    #f2f2f2 96%,
-    #f2f2f2 100%
-  );
+  background: linear-gradient(-146deg,
+      transparent 50%,
+      #f2f2f2 51%,
+      #f2f2f2 52%,
+      transparent 53%,
+      transparent 54%,
+      #f2f2f2 55%,
+      #f2f2f2 56%,
+      transparent 57%,
+      transparent 59%,
+      #f2f2f2 61%,
+      #f2f2f2 62%,
+      transparent 63%,
+      transparent 65%,
+      #f2f2f2 66%,
+      #f2f2f2 67%,
+      transparent 68%,
+      transparent 75%,
+      #f2f2f2 76%,
+      #f2f2f2 77%,
+      transparent 78%,
+      transparent 80%,
+      #f2f2f2 81%,
+      #f2f2f2 82%,
+      transparent 83%,
+      transparent 85%,
+      #f2f2f2 86%,
+      #f2f2f2 87%,
+      transparent 88%,
+      transparent 89%,
+      #f2f2f2 90%,
+      #f2f2f2 91%,
+      transparent 92%,
+      transparent 95%,
+      #f2f2f2 96%,
+      #f2f2f2 100%);
 }
 
 .second__opty-arrow {
@@ -225,44 +221,42 @@
   border-bottom-right-radius: 1000%;
   border-right: 0.1vw solid #f2f2f2;
   border-bottom: 0.2vw solid #f2f2f2;
-  background: linear-gradient(
-    -146deg,
-    transparent 50%,
-    #f2f2f2 51%,
-    #f2f2f2 52%,
-    transparent 53%,
-    transparent 54%,
-    #f2f2f2 55%,
-    #f2f2f2 56%,
-    transparent 57%,
-    transparent 59%,
-    #f2f2f2 61%,
-    #f2f2f2 62%,
-    transparent 63%,
-    transparent 65%,
-    #f2f2f2 66%,
-    #f2f2f2 67%,
-    transparent 68%,
-    transparent 75%,
-    #f2f2f2 76%,
-    #f2f2f2 77%,
-    transparent 78%,
-    transparent 80%,
-    #f2f2f2 81%,
-    #f2f2f2 82%,
-    transparent 83%,
-    transparent 85%,
-    #f2f2f2 86%,
-    #f2f2f2 87%,
-    transparent 88%,
-    transparent 89%,
-    #f2f2f2 90%,
-    #f2f2f2 91%,
-    transparent 92%,
-    transparent 95%,
-    #f2f2f2 96%,
-    #f2f2f2 100%
-  );
+  background: linear-gradient(-146deg,
+      transparent 50%,
+      #f2f2f2 51%,
+      #f2f2f2 52%,
+      transparent 53%,
+      transparent 54%,
+      #f2f2f2 55%,
+      #f2f2f2 56%,
+      transparent 57%,
+      transparent 59%,
+      #f2f2f2 61%,
+      #f2f2f2 62%,
+      transparent 63%,
+      transparent 65%,
+      #f2f2f2 66%,
+      #f2f2f2 67%,
+      transparent 68%,
+      transparent 75%,
+      #f2f2f2 76%,
+      #f2f2f2 77%,
+      transparent 78%,
+      transparent 80%,
+      #f2f2f2 81%,
+      #f2f2f2 82%,
+      transparent 83%,
+      transparent 85%,
+      #f2f2f2 86%,
+      #f2f2f2 87%,
+      transparent 88%,
+      transparent 89%,
+      #f2f2f2 90%,
+      #f2f2f2 91%,
+      transparent 92%,
+      transparent 95%,
+      #f2f2f2 96%,
+      #f2f2f2 100%);
   box-shadow: 0.2vw 0 0 #f2f2f2 inset, 0 -0.2vw 0 #f2f2f2 inset;
   z-index: -1;
 }
@@ -288,44 +282,42 @@
   transform: rotate(-15deg);
   top: 0;
   left: 0;
-  background: linear-gradient(
-    -146deg,
-    transparent 50%,
-    #f2f2f2 51%,
-    #f2f2f2 52%,
-    transparent 53%,
-    transparent 54%,
-    #f2f2f2 55%,
-    #f2f2f2 56%,
-    transparent 57%,
-    transparent 59%,
-    #f2f2f2 61%,
-    #f2f2f2 62%,
-    transparent 63%,
-    transparent 65%,
-    #f2f2f2 66%,
-    #f2f2f2 67%,
-    transparent 68%,
-    transparent 75%,
-    #f2f2f2 76%,
-    #f2f2f2 77%,
-    transparent 78%,
-    transparent 80%,
-    #f2f2f2 81%,
-    #f2f2f2 82%,
-    transparent 83%,
-    transparent 85%,
-    #f2f2f2 86%,
-    #f2f2f2 87%,
-    transparent 88%,
-    transparent 89%,
-    #f2f2f2 90%,
-    #f2f2f2 91%,
-    transparent 92%,
-    transparent 95%,
-    #f2f2f2 96%,
-    #f2f2f2 100%
-  );
+  background: linear-gradient(-146deg,
+      transparent 50%,
+      #f2f2f2 51%,
+      #f2f2f2 52%,
+      transparent 53%,
+      transparent 54%,
+      #f2f2f2 55%,
+      #f2f2f2 56%,
+      transparent 57%,
+      transparent 59%,
+      #f2f2f2 61%,
+      #f2f2f2 62%,
+      transparent 63%,
+      transparent 65%,
+      #f2f2f2 66%,
+      #f2f2f2 67%,
+      transparent 68%,
+      transparent 75%,
+      #f2f2f2 76%,
+      #f2f2f2 77%,
+      transparent 78%,
+      transparent 80%,
+      #f2f2f2 81%,
+      #f2f2f2 82%,
+      transparent 83%,
+      transparent 85%,
+      #f2f2f2 86%,
+      #f2f2f2 87%,
+      transparent 88%,
+      transparent 89%,
+      #f2f2f2 90%,
+      #f2f2f2 91%,
+      transparent 92%,
+      transparent 95%,
+      #f2f2f2 96%,
+      #f2f2f2 100%);
 }
 
 .arrow__text-wrapper {
@@ -342,31 +334,40 @@
   margin: 3.5vh 0;
 }
 
+.encyclopedia__wrapper-title {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+}
+
 .encyclopedia__searchbar {
-  grid-column: 1 / span 3;
   grid-row: 2 / 2;
-  display: flex;
-  flex-wrap: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  /* justify-content: space-between; */
   padding: 1rem;
   height: min-content;
+}
+
+.encyclopedia__searchbar p {
+  text-align: end;
 }
 
 .encyclopedia__searchbar-filter {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .encyclopedia__button {
   background-color: #f2f2f2;
   color: #121212;
   text-transform: uppercase;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 1rem;
+  font-size: 0.7rem;
 }
 
 .encyclopedia__query {
-  grid-column: 1 / span 3;
   grid-row: 3 / span 4;
   display: flex;
   flex-direction: column;
