@@ -100,13 +100,18 @@ export const Thinkers = () => {
         </div>
       </div>
       <div className="encyclopedia__query">
-        {filteredData?.map((thinker) => (
-          <Link to={`${thinker.id}`} key={thinker.id}>
-            <div>
-              <p className="thinker__name">{thinker.name}</p>
-            </div>
-          </Link>
-        ))}
+        {filteredData?.map((thinker) =>
+          //TODO: this is not working, bug if page refreshed twice due to local storage
+          filteredData === undefined ? (
+            <p className="thinker__name">'hej hej'</p>
+          ) : (
+            <Link to={`${thinker.id}`} key={thinker.id}>
+              <div>
+                <p className="thinker__name">{thinker.name}</p>
+              </div>
+            </Link>
+          )
+        )}
       </div>
     </>
   );

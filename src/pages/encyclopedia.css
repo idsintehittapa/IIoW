@@ -18,6 +18,7 @@
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 3fr;
   grid-template-columns: 1fr;
+  max-width: 1700px;
 }
 
 .encyclopedia__title {
@@ -26,9 +27,9 @@
   grid-row: 1 / 1;
 }
 
-.arrow__container-encyclopedia {
+/* .arrow__container-encyclopedia {
   padding: 3rem;
-}
+} */
 
 .first__opty-arrow {
   position: relative;
@@ -37,13 +38,13 @@
 }
 
 .first__opty-arrow .first__arrow-line {
-  width: 80%;
-  height: 110%;
+  width: 65%;
+  height: 100%;
   border-radius: 50%;
   border-bottom-left-radius: 10000% !important;
   border-left: 0.4vw solid #f2f2f2;
   position: relative;
-  top: 0%;
+  top: 200%;
   transform: rotate(10deg);
 }
 
@@ -66,8 +67,8 @@
   display: block;
   position: absolute;
   left: 0;
-  top: 60%;
-  right: -50%;
+  top: 35%;
+  right: -100%;
   margin: auto;
   transform: rotate(-100deg);
   width: 4vw;
@@ -183,9 +184,9 @@
 
 .second__opty-arrow .second__arrow-line {
   width: 80%;
-  height: 110%;
+  height: 100%;
   right: 80%;
-  top: -120%;
+  top: 65%;
   border-radius: 50%;
   border-bottom-right-radius: 10000% !important;
   border-right: 0.4vw solid #f2f2f2;
@@ -211,7 +212,7 @@
 .second__opty-arrow .second__arrow-head {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 200%;
   left: -85%;
   margin: auto;
   transform: rotate(50deg);
