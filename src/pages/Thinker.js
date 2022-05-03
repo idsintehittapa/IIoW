@@ -3,6 +3,8 @@ import { useQuery } from '@apollo/client';
 import { GET_THINKER_DETAIL } from '../queries/queries';
 import { useParams, useNavigate } from 'react-router-dom';
 
+import { CatAnimation } from '../Animations/CatAnimation';
+
 import '../pages/thinker.css';
 
 export const Thinker = () => {
@@ -20,11 +22,14 @@ export const Thinker = () => {
 
   return (
     <>
-      <div>
-        <button onClick={() => navigate(-1)}>Go back</button>
-      </div>
-      <div>
-        <p className="landing__p">{data.thinker_person_by_pk.name}</p>
+      <div className="thinker__wrapper">
+        <div>
+          <button onClick={() => navigate(-1)}>Go back</button>
+        </div>
+        <div>
+          <p className="landing__p">{data.thinker_person_by_pk.name}</p>
+        </div>
+        <CatAnimation />
       </div>
     </>
   );
