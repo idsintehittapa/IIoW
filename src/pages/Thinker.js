@@ -23,8 +23,10 @@ export const Thinker = () => {
   return (
     <>
       <div className="thinker__wrapper">
-        <div>
-          <button onClick={() => navigate(-1)}>Go back</button>
+        <div className="thinker__button">
+          <div className="wave">
+            <button onClick={() => navigate(-1)}>Go back</button>
+          </div>
         </div>
         <div>
           <p className="landing__p">{data.thinker_person_by_pk.name}</p>
