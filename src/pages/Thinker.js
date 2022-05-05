@@ -24,7 +24,7 @@ export const Thinker = () => {
     <>
       <div className="thinker__wrapper">
         <div className="thinker__button">
-          <div className="wave">
+          <div className="blob">
             <button onClick={() => navigate(-1)}>Go back</button>
           </div>
         </div>

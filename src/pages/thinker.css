@@ -3,6 +3,7 @@
   grid-template-rows: 0.1fr 1fr 1fr;
   height: 100vh;
   padding: 0 2vh;
+  position: relative;
 }
 
 .thinker__button button {
@@ -14,18 +15,17 @@
   cursor: pointer;
   letter-spacing: 0.3rem;
   position: relative;
-  width: 3rem;
+  width: 3.5rem;
 }
 
-.wave {
+.blob {
   position: absolute;
-  /* background-color: blanchedalmond; */
-  width: 3.5rem;
+  width: 3.8rem;
   left: 0;
   top: 0;
 }
 
-.wave::before {
+.blob::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -33,10 +33,12 @@
   width: 100%;
   height: 100%;
   background: url('../assets/blobS.png');
+  background-position: center;
+  background-repeat: no-repeat;
   opacity: 0;
 }
 
-.wave:hover::before {
+.blob:hover::before {
   animation: blob 5s infinite;
   opacity: 1;
 }
