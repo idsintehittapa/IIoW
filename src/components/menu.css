@@ -75,6 +75,7 @@ nav ul li a:-webkit-any-link:hover {
   visibility: visible;
   opacity: 1;
   height: 100%;
+  display: grid;
 }
 
 .menu__overlay.showMenu li {
@@ -133,6 +134,10 @@ nav ul li a:-webkit-any-link:hover {
 
 @media (min-width: 40rem) {
 
+  nav {
+    font-size: 3.5rem;
+  }
+
   .menu__wrapper::before,
   .menu__wrapper::after {
     position: absolute;
@@ -161,7 +166,10 @@ nav ul li a:-webkit-any-link:hover {
     transition: 0.2s ease, opacity 0.17s 0.03s ease-in;
   }
 
-  nav {
-    font-size: 4rem;
+  .menu__overlay {
+    grid-template-columns: 0.5fr 1fr;
+    padding: 0 2rem;
   }
+
+
 }

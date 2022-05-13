@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { MenuAnimation } from '../Animations/MenuAnimation';
 
 export const Menu = ({ open, setOpen }) => {
   return (
@@ -26,6 +27,7 @@ export const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
       </ul>
+      <MenuAnimation />
     </div>
   );
 };
