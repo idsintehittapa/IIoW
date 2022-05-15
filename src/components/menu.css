@@ -29,7 +29,7 @@ nav {
 }
 
 nav {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: start;
 }
 
@@ -76,6 +76,8 @@ nav ul li a:-webkit-any-link:hover {
   opacity: 1;
   height: 100%;
   display: grid;
+  padding: 5vh;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
 }
 
 .menu__overlay.showMenu li {

@@ -1,9 +1,15 @@
 @media (min-width: 40rem) {
   .test__container {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    justify-self: center;
+    align-self: center;
+    padding: 1vh;
+    margin-top: 5vh;
+    /* max-height: 100vh; */
+    grid-row-gap: 2vh;
   }
 }
 
