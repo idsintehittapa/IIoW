@@ -1,6 +1,23 @@
+.test__container {
+  animation: fadeInLeft 2.3s ease backwards;
+
+}
+
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0%;
+    transform: translate3d(-25%, 0, 0);
+  }
+
+  100% {
+    opacity: 1%;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
 @media (min-width: 40rem) {
   .test__container {
-    /* background-color: aqua; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -8,7 +25,6 @@
     align-self: center;
     padding: 1vh;
     margin-top: 5vh;
-    /* max-height: 100vh; */
     grid-row-gap: 2vh;
   }
 }

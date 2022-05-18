@@ -5,8 +5,8 @@ export const Comic1 = () => {
   return (
     <div className="comic__wrapper">
       <svg
-        width="640"
-        height="334"
+        // width="640"
+        // height="334"
         viewBox="0 0 640 334"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

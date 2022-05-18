@@ -1,7 +1,102 @@
 #comic {
   width: 100%;
   height: 100%;
+  perspective: 500px;
 }
+
+#right_eyebrowc2,
+#left_eyebrowc2 {
+  animation: eyebrows 3s both infinite;
+}
+
+@keyframes eyebrows {
+  5% {
+    transform: translateY(-0.1%);
+  }
+
+  10% {
+    transform: translateY(-0.2%);
+  }
+
+  25% {
+    transform: translateY(-0.3%);
+  }
+
+  45% {
+    transform: translateY(-1.2%);
+  }
+
+  85% {
+    transform: translateY(-1.2%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+#facec2 {
+  animation: face 3s both infinite;
+  transform-origin: bottom center
+}
+
+@keyframes face {
+  5% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+
+  10% {
+    transform: rotate3d(1, 1, 0, 5deg);
+  }
+
+  25% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+
+  45% {
+    transform: rotate3d(1, 1, 0, -5deg);
+  }
+
+  85% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 0, 5deg);
+  }
+}
+
+#arm {
+  animation: arm 3s both infinite;
+}
+
+@keyframes arm {
+  5% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+
+  10% {
+    transform: rotate3d(1, 0, 0, 10deg);
+  }
+
+  25% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+
+  45% {
+    transform: rotate3d(1, 1, 0, 5deg);
+  }
+
+  85% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+}
+
+
 
 /* .comic__wrapper {
   max-height: 30vh;

@@ -2,6 +2,7 @@ import React from 'react';
 import './menuAnimation.css';
 import { Comic1 } from './Comic1';
 import { Comic2 } from './Comic2';
+import { Comic3 } from './Comic3';
 
 export const MenuAnimation = () => {
   return (
@@ -11,7 +12,7 @@ export const MenuAnimation = () => {
     <div class="test__container">
       <Comic1 />
       <Comic2 />
-      <Comic2 />
+      <Comic3 />
 
       {/* <div class="canvas-container-1 center">
         <div className="head center"> */}
