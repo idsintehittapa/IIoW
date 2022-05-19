@@ -1,0 +1,103 @@
+#comic {
+  width: 100%;
+  height: 100%;
+}
+
+.comic__wrapper {
+  max-width: 15rem;
+}
+
+#upper_lip {
+  animation: upperlip 1s both infinite;
+}
+
+#lower_lip {
+  animation: lowerlip 0.8s both infinite;
+}
+
+@keyframes upperlip {
+  5% {
+    transform: translateY(-0.1%);
+  }
+
+  10% {
+    transform: translateY(-0.2%);
+  }
+
+  20% {
+    transform: translateY(-0.2%);
+  }
+
+  25% {
+    transform: translateY(-0.1%);
+  }
+
+  45% {
+    transform: translateY(-0.2%);
+  }
+
+  50% {
+    transform: translateY(-0.1%);
+  }
+
+  55% {
+    transform: translateY(-0.2%);
+  }
+
+  65% {
+    transform: translateY(-0.3%);
+  }
+
+  75% {
+    transform: translateY(-0.2%);
+  }
+
+  85% {
+    transform: translateY(-0.1%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes lowerlip {
+  5% {
+    transform: translateY(-0.2%);
+  }
+
+  10% {
+    transform: translateY(-0.3%);
+  }
+
+  15% {
+    transform: translateY(-0.5%);
+  }
+
+  20% {
+    transform: translateY(0%);
+  }
+
+  25% {
+    transform: translateY(-0.1%);
+  }
+
+  45% {
+    transform: translateY(-0.2%);
+  }
+
+  50% {
+    transform: translateY(-0.3%);
+  }
+
+  55% {
+    transform: translateY(0%);
+  }
+}
+
+@media (min-width: 40rem) {
+  .comic__wrapper {
+    max-height: 50rem;
+    max-width: 65rem;
+  }
+}

@@ -29,7 +29,7 @@ nav {
 }
 
 nav {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: start;
 }
 
@@ -70,15 +70,26 @@ nav ul li a:-webkit-any-link:hover {
   z-index: 3;
 }
 
+.menu__animation-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .menu__overlay.showMenu {
   width: 100%;
   visibility: visible;
   opacity: 1;
   height: 100%;
+  display: grid;
+  padding: 5vh;
 }
 
 .menu__overlay.showMenu li {
-  animation: fadeInLeft .3s ease backwards;
+  animation: fadeIn .3s ease backwards;
+}
+
+.menu__overlay.showMenu div {
+  animation: fadeInComic 1.7s;
 }
 
 .menu__overlay.showMenu li:nth-child(1) {
@@ -118,8 +129,7 @@ nav ul li a:-webkit-any-link:hover {
 }
 
 
-
-@keyframes fadeInLeft {
+@keyframes fadeIn {
   0% {
     opacity: 0%;
     transform: translate3d(-25%, 0, 0);
@@ -131,7 +141,21 @@ nav ul li a:-webkit-any-link:hover {
   }
 }
 
+@keyframes fadeInComic {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 1%;
+  }
+}
+
 @media (min-width: 40rem) {
+
+  nav {
+    font-size: 3.5rem;
+  }
 
   .menu__wrapper::before,
   .menu__wrapper::after {
@@ -161,7 +185,8 @@ nav ul li a:-webkit-any-link:hover {
     transition: 0.2s ease, opacity 0.17s 0.03s ease-in;
   }
 
-  nav {
-    font-size: 4rem;
+  .menu__overlay {
+    grid-template-columns: 0.5fr 1fr;
+    padding: 0 2rem;
   }
 }
