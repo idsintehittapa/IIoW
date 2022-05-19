@@ -95,41 +95,6 @@
   }
 }
 
-/* #right_eye-thick-upper {
-  animation: right_eye 3s both infinite;
-} */
-
-/* @keyframes right_eye {
-  5% {
-    transform: translateY(1%);
-  }
-
-  10% {
-    transform: translateY(2%);
-  }
-
-  15% {
-    transform: translateY(3%);
-  }
-
-  20% {
-    transform: translateY(3.5%);
-  }
-
-  25% {
-    transform: translateY(5%);
-  }
-
-  35% {
-    transform: translateX(0%);
-  }
-} */
-/* 
-#right_eye_iris {
-  animation: right_eye-iris 3s none infinite;
-} */
-
-
 @media (min-width: 40rem) {
   .comic__wrapper {
     max-height: 50rem;

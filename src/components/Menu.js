@@ -27,7 +27,9 @@ export const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
       </ul>
-      <MenuAnimation />
+      <div className="menu__animation-wrapper">
+        <MenuAnimation />
+      </div>
     </div>
   );
 };
