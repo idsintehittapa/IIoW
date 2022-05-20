@@ -46,19 +46,15 @@ export const EncyclopediaLanding = () => {
             viewBox="0 0 914 210"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            id="drawing"
           >
             <path
               d="M827.462 37.0851C827.462 37.0851 122 7.99999 41.9992 47.7234C-38.0012 87.4468 20.9998 148 50.9998 155C80.9998 162 778 193 822 173C866 153 931.395 74.851 857 37.0851C782.605 -0.680893 149.999 24 56.044 56.7659C-37.9113 89.5319 27.0879 166 56.044 173C85 180 825.394 178.234 864.394 162C903.394 145.766 916.451 85.0035 879.999 47.7234C860.071 27.342 812.897 19 812.897 19"
-              stroke="white"
+              className="path"
             />
           </svg>
         </span>
         <Link to="/encyclopedia">
-          {/* <span> */}
           <h2 className="encyclopedia">encyclopedia</h2>
-          {/* </span> */}
-          {/* </span> */}
         </Link>
       </div>
       <div className="horizontal__scroll-wrapper">

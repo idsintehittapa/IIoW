@@ -18,8 +18,8 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 20rem;
-  height: 8.7rem;
+  width: 100%;
+  height: 100%;
 }
 
 .heading__container svg {
@@ -27,7 +27,10 @@
   height: 100%;
   position: absolute;
   z-index: 1;
-  stroke-width: 2.5;
+  stroke-dasharray: 4100;
+  stroke-dashoffset: 0;
+  stroke-width: 3.5;
+  stroke: #f2f2f2;
 }
 
 .encyclopedia {
@@ -39,10 +42,27 @@
   z-index: 2;
 }
 
+
+.heading__container svg:hover {
+  stroke-dasharray: 4100;
+  stroke-dashoffset: 0;
+  animation: dash 2s linear alternate infinite;
+  stroke: #e3225f;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 4000;
+    transform: rotate(0deg);
+  }
+}
+
 .horizontal__scroll-wrapper {
   display: flex;
   flex-direction: column;
 }
+
 
 .horizontal__scroll_text_and_arrow {
   display: flex;
@@ -242,5 +262,11 @@
 
   .horizontal__scroll__gallery-img {
     height: 35rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .heading__container {
+    width: 50vw;
   }
 }
