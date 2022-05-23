@@ -1,20 +1,20 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
-import './landingPageImage.css';
+import './footer.css';
 
-export const LandingPageImage = () => {
+export const Footer = () => {
   const [show, doShow] = useState({
-    hanna: false
+    footer: false
   });
   const scrollRef = useRef(null);
 
   useLayoutEffect(() => {
     const topPos = (element) => element.getBoundingClientRect().top;
-    const hannaDiv = topPos(scrollRef.current);
+    const footerDiv = topPos(scrollRef.current);
 
     const onScroll = () => {
       const scrollPos = window.scrollY + window.innerHeight;
-      if (hannaDiv < scrollPos) {
-        doShow((state) => ({ ...state, hanna: true }));
+      if (footerDiv < scrollPos) {
+        doShow((state) => ({ ...state, footer: true }));
       }
     };
     window.addEventListener('scroll', onScroll);
@@ -22,9 +22,13 @@ export const LandingPageImage = () => {
   }, []);
 
   return (
-    <div
-      className={`${show.hanna ? 'landing__img-animation' : ''}`}
+    <footer
       ref={scrollRef}
-    ></div>
+      className={`${show.footer ? 'landing__footer' : ''}`}
+    >
+      <div className="footer__eye-container">
+        <p>Don't be a stranger...</p>
+      </div>
+    </footer>
   );
 };
