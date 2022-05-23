@@ -1,5 +1,4 @@
 .landing_encyclopedia {
-  height: 100vh;
   color: #f2f2f2;
   padding: 0 2vh;
 }
@@ -47,7 +46,7 @@
   stroke-dasharray: 4100;
   stroke-dashoffset: 0;
   animation: dash 2s linear alternate infinite;
-  stroke: #e3225f;
+  stroke: rgba(227, 34, 95, 0.8)
 }
 
 
