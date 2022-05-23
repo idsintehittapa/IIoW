@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hero } from '../components/Hero';
-import { LandingPageImage } from '../Animations/LandingPageImage';
+import { Footer } from '../Animations/Footer';
 import { EncyclopediaLanding } from '../components/EncyclopediaLanding';
 import { GalleryLanding } from '../components/GalleryLanding';
 
@@ -34,8 +34,9 @@ export const LandingPage = () => {
           labore et dolore magna aliqu
         </p>
       </div>
-      <LandingPageImage />
+      <div className="hanna"></div>
       <EncyclopediaLanding />
+
       <div className="landing__contribute">
         <p className="landing__p">
           <span className="landing__p-span">(xxxx)</span> Lorem ipsum dolor sit
@@ -43,12 +44,7 @@ export const LandingPage = () => {
           labore et dolore magna aliqu
         </p>
       </div>
-      <footer>
-        <p>share</p>
-        <p>tweet</p>
-        <p>facebook</p>
-        <p>linkedIn</p>
-      </footer>
+      <Footer />
     </>
   );
 };
