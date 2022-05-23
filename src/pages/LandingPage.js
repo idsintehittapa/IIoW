@@ -34,7 +34,6 @@ export const LandingPage = () => {
           labore et dolore magna aliqu
         </p>
       </div>
-      <div className="hanna"></div>
       <EncyclopediaLanding />
 
       <div className="landing__contribute">

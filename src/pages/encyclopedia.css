@@ -18,7 +18,7 @@
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 3fr;
   grid-template-columns: 1fr;
-  max-width: 1700px;
+  max-width: 1500px;
 }
 
 .encyclopedia__title {
