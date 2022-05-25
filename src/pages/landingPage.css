@@ -4,16 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* padding: 1rem; */
 }
 
 .landing__p {
-  /* font-size: 4.5vw; */
   font-size: calc(20px + 2vmin);
 }
 
 .landing__p-span {
-  /* font-size: 3.5vw; */
   font-size: calc(20px + 1vmin);
 }
 
@@ -23,7 +20,6 @@
 }
 
 .landing__contribute {
-  /* height: 30vh; */
   color: #f2f2f2;
   margin: 10vh 0;
 }

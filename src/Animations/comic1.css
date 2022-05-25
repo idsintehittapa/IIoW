@@ -97,7 +97,11 @@
 
 @media (min-width: 40rem) {
   .comic__wrapper {
-    max-height: 50rem;
-    max-width: 65rem;
+    height: 10rem;
+    max-width: 35rem;
+  }
+
+  #comic {
+    width: 20rem;
   }
 }

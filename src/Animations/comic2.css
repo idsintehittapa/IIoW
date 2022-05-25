@@ -95,3 +95,33 @@
     transform: rotate3d(1, 0, 0, 0deg);
   }
 }
+
+#facec2 {
+  animation: head 1s both infinite;
+}
+
+@keyframes head {
+  5% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  10% {
+    transform: rotate3d(0, 1, 0, 3deg);
+  }
+
+  25% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+
+  45% {
+    transform: rotate3d(0, 1, 0, 5deg);
+  }
+
+  85% {
+    transform: rotate3d(0, 1, 0, 2deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
