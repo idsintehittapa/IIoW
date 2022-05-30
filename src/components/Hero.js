@@ -4,15 +4,15 @@ import './hero.css';
 export const Hero = () => {
   const scrollGalleryImages = [
     {
-      src: require('../assets/GettyImages_514704088_header.jpg'),
+      src: require('../assets/toniMorrison.png'),
       alt: 'toni morrison'
     },
     {
-      src: require('../assets/gettyimages-694880169-copy.jpg'),
+      src: require('../assets/audryLorde.png'),
       alt: 'audry lorde'
     },
     {
-      src: require('../assets/Sylvia-Plath.jpg'),
+      src: require('../assets/Sylvia-Plath.png'),
       alt: 'sylvia plath'
     },
     {
@@ -36,15 +36,15 @@ export const Hero = () => {
       alt: 'simone de beauvoir'
     },
     {
-      src: require('../assets/Sylvia-Plath.jpg'),
+      src: require('../assets/Sylvia-Plath.png'),
       alt: 'sylvia plath'
     },
     {
-      src: require('../assets/GettyImages_514704088_header.jpg'),
+      src: require('../assets/toniMorrison.png'),
       alt: 'toni morrison'
     },
     {
-      src: require('../assets/gettyimages-694880169-copy.jpg'),
+      src: require('../assets/audryLorde.png'),
       alt: 'audry lorde'
     },
     {

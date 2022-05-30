@@ -1,6 +1,6 @@
 import React from 'react';
 import bell from '../assets/h1380-0cce1.jpg';
-import woolf from '../assets/087dacdb43f5bf5cca958d9100145272.jpg';
+import woolf from '../assets/wolf.jpg';
 import woolfOverlay from '../assets/Woolf_Overlay.png';
 import bellOverlay from '../assets/bellOverlay.png';
 
