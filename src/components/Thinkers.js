@@ -36,6 +36,30 @@ export const Thinkers = () => {
     setFilteredData(fd);
   };
 
+  const filterAuthor = () => {
+    const fd = data.thinker_person.filter((thinker) => {
+      let found = false;
+      thinker.person_categories.map((category) => {
+        found = found || category.category.name === 'author';
+        return found;
+      });
+      return found;
+    });
+    setFilteredData(fd);
+  };
+
+  const filterComic = () => {
+    const fd = data.thinker_person.filter((thinker) => {
+      let found = false;
+      thinker.person_categories.map((category) => {
+        found = found || category.category.name === 'comic artist';
+        return found;
+      });
+      return found;
+    });
+    setFilteredData(fd);
+  };
+
   const filterBF = () => {
     const fd = data.thinker_person.filter((thinker) => {
       let found = false;
@@ -82,8 +106,20 @@ export const Thinkers = () => {
           >
             philosopher
           </button>
+          <button
+            className="encyclopedia__button"
+            onClick={() => filterAuthor()}
+          >
+            author
+          </button>
+          <button
+            className="encyclopedia__button"
+            onClick={() => filterComic()}
+          >
+            comic artist
+          </button>
           <button className="encyclopedia__button" onClick={() => filterBF()}>
-            black feminism{' '}
+            black feminism
           </button>
           <button
             className="encyclopedia__button"
@@ -106,7 +142,14 @@ export const Thinkers = () => {
             <p className="thinker__name">'hej hej'</p>
           ) : (
             <Link to={`${thinker.id}`} key={thinker.id}>
-              <div>
+              <div className="thinker__image">
+                {thinker.person_imgs.map((image) => (
+                  <img
+                    key={image.img_id}
+                    src={`https://qfhbhjfjvqhuxhigjyvz.nhost.run/v1/storage/files/${image.img_id}`}
+                    alt={image.alt_name}
+                  />
+                ))}
                 <p className="thinker__name">{thinker.name}</p>
               </div>
             </Link>

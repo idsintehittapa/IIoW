@@ -14,7 +14,6 @@
 .encyclopedia__wrapper {
   color: #f2f2f2;
   width: 100vw;
-  height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 3fr;
   grid-template-columns: 1fr;
@@ -371,12 +370,33 @@
 .encyclopedia__query {
   grid-row: 3 / span 4;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 5vh;
 }
 
 .thinker__name {
   color: #f2f2f2;
   text-decoration: none;
+}
+
+.thinker__image {
+  height: 15rem;
+  margin: 3vh;
+}
+
+.thinker__image img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 40rem) {
+  .encyclopedia__query {
+    flex-direction: row;
+    margin-top: 0vh;
+  }
 }

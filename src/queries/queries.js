@@ -11,6 +11,10 @@ export const GET_THINKERS = gql`
           id
         }
       }
+      person_imgs {
+        img_id
+        alt_name
+      }
       person_fields {
         field {
           name
